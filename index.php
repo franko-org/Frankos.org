@@ -1,3 +1,9 @@
+<?php
+// Get Price
+		$json_string2	= file_get_contents('http://www.frankos.org/coin_api.php?coin_id=33');
+		$json2			= json_decode($json_string2);
+		$price			= round($json2->usd_value, 2, PHP_ROUND_HALF_UP);
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -39,6 +45,7 @@
 
     <!-- Outer Container -->
     <div id="outer-container">
+
       <!-- Left Sidebar -->
       <section id="left-sidebar">
         
@@ -58,13 +65,11 @@
 		  <li id="menu-item-bounties" class="menu-item scroll"><a href="https://docs.google.com/document/d/1JXVDKeIP340GH8ZJFOCWrJubG9sEgv598C3uLYTPnCE/">Bounties</a></li>
 		  <li id="menu-item-media" class="menu-item"><a href="http://www.youtube.com/frankocurrency">Media</a></li>
 		  <li id="menu-item-forum" class="menu-item"><a href="http://forum.frankos.org">Forum</a></li>
-          <li id="menu-item-zeusminer" class="menu-item"><a href="https://zeusminer.com/?raf=2108">Buy Mining Gear</a></li>
           <li id="menu-item-blockexplorer" class="menu-item"><a href="http://coinplorer.com/FRK">Block Explorer</a></li>
-          <li id="menu-item-franko-price" class="menu-item"><?=$price;?></li>
+          <li id="menu-item-frank-price" class="menu-item"><a href="https://www.cryptsy.com/users/register?refid=2108"><strong>₣1 = $<?=$price;?></strong></a></li>
           <li id="menu-item-franko-price" class="menu-item"><a href="http://www.frankos.org/collective/" class="link-scroll"><img src="assets/images/collectiveBadge.png" width="200" alt="collective"></a></li>
         </ul><!-- #main-menu -->
-        
-		
+
       </section><!-- #left-sidebar -->
       <!-- end: Left Sidebar -->
 
@@ -448,7 +453,6 @@
     <script src="assets/js/functions.min.js"></script>
     <script src="assets/js/initialise-functions.js"></script>
 
-	<script src="assets/js/mouse-follow.js"></script>
     <!-- IE9 form fields placeholder fix -->
     <!--[if lt IE 9]>
     <script>contact_form_IE9_placeholder_fix();</script>
