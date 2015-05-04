@@ -69,7 +69,7 @@
           <li id="menu-item-blockexplorer" class="menu-item"><a href="http://coinplorer.com/FRK">Block Explorer 2</a></li>
           <li id="menu-item-frank-price" class="menu-item"><a href="https://www.cryptsy.com/users/register?refid=2108"><strong>₣1 = $<?=$price;?></strong></a></li>
   		  <li id="menu-item-forum" class="menu-item"><a href="https://www.coinbase.com/join/frk">$1 Free BTC</a></li>
-          <li id="menu-item-franko-price" class="menu-item"><a href="http://www.frankos.org/collective/" class="link-scroll"><img src="assets/images/collectiveBadge.png" width="200" alt="collective"></a></li>
+          <li id="menu-item-franko-price" class="menu-item"><a href="http://www.frankos.org/collective/" class="link-scroll"><img src="http://46.101.156.249/collective/img/FrankoCollectiveIcon2.png" width="200" alt="collective"></a></li>
         </ul><!-- #main-menu -->
 
       </section><!-- #left-sidebar -->
@@ -144,8 +144,9 @@
                   <div class="item active">
                     <div class="carousel-text-content">
                       <img src="assets/images/theme_images/windows.png" class="icon" alt="windows">
-                      <h2 class="title">Windows</h2>
-                      <p><a href="https://www.dropbox.com/s/duhesk6rb2bdo3y/franko-qt-v1.0.0.zip" class="btn btn-outline-inverse btn-sm">Download</a></p>
+                      <h2 class="title">Windows</h2><p><a href="https://mega.co.nz/#!rFVHFRKJ!2nWzSuX0F7BvfenCEh0VuBmzntIY7eOieIVskfVscvQ
+Include file key" class="btn btn-outline-inverse btn-sm">Mega Download</a></p>
+                      <p><a href="https://www.dropbox.com/s/duhesk6rb2bdo3y/franko-qt-v1.0.0.zip" class="btn btn-outline-inverse btn-sm">Dropbox Download</a></p>
 
                     </div>
                   </div><!-- .item -->
@@ -170,7 +171,7 @@
                     <div class="carousel-text-content">
                       <img src="assets/images/theme_images/github.png" class="icon" alt="github franko">
                       <h2 class="title">Source</h2>
-                      <p><a href="http://www.github.com/franko-org/franko" class="btn btn-outline-inverse btn-sm">Download</a></p>
+                      <p><a href="http://www.github.com/franko-org/franko" class="btn btn-outline-inverse btn-sm">View Source</a></p>
                     </div>
                   </div><!-- .item -->
                   
