@@ -69,7 +69,7 @@
           <li id="menu-item-blockexplorer" class="menu-item"><a href="http://coinplorer.com/FRK">Block Explorer 2</a></li>
           <li id="menu-item-frank-price" class="menu-item"><a href="https://www.cryptsy.com/users/register?refid=2108"><strong>₣1 = $<?=$price;?></strong></a></li>
   		  <li id="menu-item-forum" class="menu-item"><a href="https://www.coinbase.com/join/frk">$1 Free BTC</a></li>
-          <li id="menu-item-franko-price" class="menu-item"><a href="http://www.frankos.org/collective/" class="link-scroll"><img src="http://46.101.156.249/collective/img/FrankoCollectiveIcon2.png" width="200" alt="collective"></a></li>
+          <li id="menu-item-franko-price" class="menu-item"><a href="http://www.frankos.org/collective/" class="link-scroll"><img src="/img/CollectiveEmblemWhite.png" width="100" alt="collective"></a></li>
         </ul><!-- #main-menu -->
 
       </section><!-- #left-sidebar -->
@@ -82,6 +82,7 @@
             <div class="col-sm-10 col-md-9 pull-right">
 
                 <section class="feature-text">
+                    <img src="/img/CollectiveEmblemWhite.png" alt="the collective">
                   <h1>Franko</h1>
                   <p>More than just a Crypto Currency. Franko is a new corporate model that promotes financial freedom and global unity for everyone. Non nobis solum, sed omnibus!</p>
                   <p><a href="#text" class="link-scroll btn btn-outline-inverse btn-lg">find out more</a></p>
