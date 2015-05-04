@@ -82,8 +82,10 @@
             <div class="col-sm-10 col-md-9 pull-right">
 
                 <section class="feature-text">
-                    <img src="/img/CollectiveEmblemWhite.png" alt="the collective">
-                  <h1>Franko</h1>
+                    <center>
+                        <img src="/img/CollectiveEmblemWhite.png" alt="the collective">
+                        <h1>Franko</h1>
+                    </center>
                   <p>More than just a Crypto Currency. Franko is a new corporate model that promotes financial freedom and global unity for everyone. Non nobis solum, sed omnibus!</p>
                   <p><a href="#text" class="link-scroll btn btn-outline-inverse btn-lg">find out more</a></p>
                 </section>
