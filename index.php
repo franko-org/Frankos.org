@@ -2,7 +2,7 @@
 // Get Price
 		$json_string2	= file_get_contents('http://www.frankos.org/coin_api.php?coin_id=33');
 		$json2			= json_decode($json_string2);
-		$price			= round($json2->usd_value, 2, PHP_ROUND_HALF_UP);
+		$price			= round($json2->usd_value, 4, PHP_ROUND_HALF_UP);
 ?>
 <!DOCTYPE html>
 <html lang="en">
