@@ -57,6 +57,8 @@
         <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
 
         <ul id="main-menu">
+		<li class="menu-item scroll"><a class="e-widget" href="https://gleam.io/c8lcs/franko-giveaway" rel="nofollow">Franko Giveaway</a>
+<script type="text/javascript" src="https://js.gleam.io/e.js" async="true"></script></li>
           <li id="menu-item-text" class="menu-item scroll"><a href="#text">Franko is..</a></li>
           <li id="menu-item-carousel" class="menu-item scroll"><a href="#carousel">Downloads</a></li>
           <li id="menu-item-grid" class="menu-item scroll"><a href="#grid">Docs</a></li>
