@@ -149,8 +149,7 @@
                   <div class="item active">
                     <div class="carousel-text-content">
                       <img src="assets/images/theme_images/windows.png" class="icon" alt="windows">
-                      <h2 class="title">Windows</h2><p><a href="https://mega.co.nz/#!rFVHFRKJ!2nWzSuX0F7BvfenCEh0VuBmzntIY7eOieIVskfVscvQ
-Include file key" class="btn btn-outline-inverse btn-sm">Mega Download</a></p>
+                      <h2 class="title">Windows</h2><p><a href="https://mega.co.nz/#!rFVHFRKJ!2nWzSuX0F7BvfenCEh0VuBmzntIY7eOieIVskfVscvQ" class="btn btn-outline-inverse btn-sm">Mega Download</a></p>
 					  <p><a href="https://drive.google.com/file/d/0B-W443vRXlxGM2hPSzVUR1g3WTQ/view?usp=sharing" class="btn btn-outline-inverse btn-sm">Google Play Download</a></p>
                       <p><a href="https://www.dropbox.com/s/duhesk6rb2bdo3y/franko-qt-v1.0.0.zip" class="btn btn-outline-inverse btn-sm">Dropbox Download</a></p>
 
