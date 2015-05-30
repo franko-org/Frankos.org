@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Franko is an opensource distributed autonomous corporation built on top of a blockchain assisted payment network that maintains, secures and audits all corporate shares securely and transparently.">
     <meta name="author" content="https://plus.google.com/u/0/+ChristopherFranko">
+	<meta name="google-site-verification" content="pamo7B-FYQtpJd9fM1WDTSrRinkvDegZ0NXkQLGHVkg" />
 
     <meta name="robots" content="index, follow">
 
@@ -465,6 +466,15 @@
     <!--[if lt IE 9]>
     <script>contact_form_IE9_placeholder_fix();</script>
     <![endif]--> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-45824330-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
   </body>
 </html>
