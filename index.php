@@ -185,7 +185,8 @@
                     <div class="carousel-text-content">
                       <img src="assets/images/theme_images/github.png" class="icon" alt="franko.conf">
                       <h2 class="title">Franko.conf</h2>
-                      <p><a href="https://www.dropbox.com/s/creo4zodzrqxv5x/franko.conf" class="btn btn-outline-inverse btn-sm">Download</a></p>
+					  <p><a href="http://www.frankos.org/downloads/franko.conf" class="btn btn-outline-inverse btn-sm">Download</a></p>
+                      <p><a href="https://www.dropbox.com/s/creo4zodzrqxv5x/franko.conf" class="btn btn-outline-inverse btn-sm">Dropbox Download</a></p>
                     </div>
                   </div><!-- .item -->
 
