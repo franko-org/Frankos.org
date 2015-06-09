@@ -70,7 +70,7 @@
           <li id="menu-item-blockexplorer" class="menu-item"><a href="http://explorer.frankos.org:3000">Block Explorer</a></li>
           <li id="menu-item-blockexplorer" class="menu-item"><a href="http://coinplorer.com/FRK">Block Explorer 2</a></li>
           <li id="menu-item-frank-price" class="menu-item"><a href="https://www.cryptsy.com/users/register?refid=2108"><strong>₣1 = $<?=$price;?></strong></a></li>
-  		  <li id="menu-item-forum" class="menu-item"><a href="https://www.coinbase.com/join/frk">$1 Free BTC</a></li>
+  		  <li id="menu-item-forum" class="menu-item"><a href="https://www.coinbase.com/join/frk">$5 Free BTC</a></li>
           <li id="menu-item-franko-price" class="menu-item"><a href="http://www.frankos.org/collective/" class="link-scroll"><img src="/img/CollectiveEmblemWhite.png" width="100" alt="collective"></a></li>
 		  <li id="menu-item-dcc" class="menu-item"><a href="https://credly.com/credit/cac7bc32e" class="link-scroll"><img src="/img/dcc-badge.png" width="100" alt="collective"></a></li>
         </ul><!-- #main-menu -->
