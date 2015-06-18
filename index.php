@@ -10,9 +10,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Franko is an opensource distributed autonomous corporation built on top of a blockchain assisted payment network that maintains, secures and audits all FRK's securely and transparently.">
+    <meta name="description" content="Franko is a peer-to-peer payment network built with blockchain technology.">
     <meta name="author" content="https://plus.google.com/u/0/+ChristopherFranko">
 	<meta name="google-site-verification" content="pamo7B-FYQtpJd9fM1WDTSrRinkvDegZ0NXkQLGHVkg" />
+	<meta property="og:url" content="http://www.frankos.org/" />
+    <meta property="og:description" content="Franko - Franko is a peer-to-peer payment network built with blockchain technology" />
+    <meta property="og:title" content="Frankos.org" />
+    <meta property="og:image" content="http://www.frankos.org/img/frankoLogoNew.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.frankos.org/img/frankoLogoNew.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://www.frankos.org/img/frankoLogoNew.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://www.frankos.org/img/frankoLogoNew.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://www.frankos.org/img/frankoLogoNew.png">
 
     <meta name="robots" content="index, follow">
 
