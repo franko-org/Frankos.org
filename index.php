@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Franko is a peer-to-peer payment network built with blockchain technology.">
-    <meta name="author" content="https://plus.google.com/u/0/+ChristopherFranko">
+    <meta name="author" content="The Collective">
 	<meta name="google-site-verification" content="pamo7B-FYQtpJd9fM1WDTSrRinkvDegZ0NXkQLGHVkg" />
 	<meta property="og:url" content="http://www.frankos.org/" />
     <meta property="og:description" content="Franko - Franko is a peer-to-peer payment network built with blockchain technology" />
