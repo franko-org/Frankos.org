@@ -170,7 +170,7 @@
                       <img src="assets/images/theme_images/apple.png" class="icon" alt="franko apple">
                       <h2 class="title">Mac</h2>
                       <p><a href="http://www.frankos.org/downloads/franko-0.10.2.2-osx64.tar.gz" class="btn btn-outline-inverse btn-sm">Download</a></p>
-					  <p><a href="https://mega.co.nz/#!7EsXQRBS!agSJy7QOfJzhplTNPVBq-QdPKPKrHflrXhRJNE8p8LE">Mega Download</a></p>
+					  <p><a href="https://mega.co.nz/#!7EsXQRBS!agSJy7QOfJzhplTNPVBq-QdPKPKrHflrXhRJNE8p8LE" class="btn btn-outline-inverse btn-sm">Mega Download</a></p>
                     </div>
                   </div><!-- .item -->
 
