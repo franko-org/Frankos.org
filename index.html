@@ -1,385 +1,481 @@
+<?php
+// Get Price
+		$json_string2	= file_get_contents('http://www.frankos.org/coin_api.php?coin_id=33');
+		$json2			= json_decode($json_string2);
+		$price			= round($json2->usd_value, 4, PHP_ROUND_HALF_UP);
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Franko is anonymous internet money that can be instantly transferred to anyone in the world over the internet.
-">
-<meta name="google-site-verification" content="pamo7B-FYQtpJd9fM1WDTSrRinkvDegZ0NXkQLGHVkg" />
-    <meta name="author" content=Franko Collective"">
+    <meta name="description" content="Franko is an opensource distributed autonomous corporation built on top of a blockchain assisted payment network that maintains, secures and audits all FRK's securely and transparently.">
+    <meta name="author" content="https://plus.google.com/u/0/+ChristopherFranko">
+	<meta name="google-site-verification" content="pamo7B-FYQtpJd9fM1WDTSrRinkvDegZ0NXkQLGHVkg" />
 
-    <title>Franko is Freedom</title>
+    <meta name="robots" content="index, follow">
+
+    <title>Franko | Distributed Autonomous Corporation</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- owl carousel css -->
+    <link href="assets/js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="assets/js/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="assets/js/owl-carousel/owl.transitions.css" rel="stylesheet">
 
-    <!-- Add custom CSS here -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+	
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
   </head>
 
   <body>
 
-    <!-- Side Menu -->
-    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="icon-reorder"> Menu</i></a>
-    <div id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="icon-remove"></i></a>
-        <li class="sidebar-brand"><a href="#about" title="About Frankos.org">Franko Is Freedom</a></li>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#merchants">Merchants</a></li>
-        <li><a href="#services">Features</a></li>
-        <li><a href="#downloads">Download</a></li>
-        <li><a href="http://www.myfirstfranko.com/GettingStarted/">Getting Started</a></li>
-        <li><a href="https://plus.google.com/u/0/communities/115318021279834223084" target="_blank">Community</a></li>
-        <li><a href="http://forum.frankos.org">Forums</a></li>
-        <li><a href="http://frankopedia.com">Wiki</a></li>
-        <li><a href="https://bitcointalk.org/index.php?topic=202417.0" target="_blank">Bitcointalk</a></li>
-        <li><a href="http://franko.freshdesk.com/" target="_blank">Help & Support</a></li>
-        <li><a href="http://www.youtube.com/frankocurrency" target="_blank">Videos</a></li>
-        <li><a href="/paper-wallet.htm">Paper Wallet</a></li>
-        <li class="sidebar-brand">Press</li>
-        <li><a href="http://online.wsj.com/article/HUG1746545.html?dsk=y"><img src="img/wsj-icon.png" style="width:20px;"> WSJ Article 1</a></li>
-        <li><a href="http://online.wsj.com/article/HUG1747586.html?dsk=y"><img src="img/wsj-icon.png" style="width:20px;"> WSJ Article 2</a></a></li>
-      </ul>
-    </div>
-    <!-- /Side Menu -->
-  
-    <!-- Full Page Image Header Area -->
-    <div id="top" class="header">
-      <div class="vert-text">
-        <h1><img src="img/frkLogoNew.png" title="Franko" style="width:150px;"> Franko Is Freedom</h1>
-        <h3><em>Non</em> nobis solum, <em>Sed</em> omnibus.</h3>
-        <a href="#intro" class="btn btn-default btn-lg">Find Out More</a>
-        <br><br><br>
-        <a href="index.sp.html">Español</a>
-        <a href="index.pt-br.html">Português</a>
-        <a href="index.ro.html">Română</a>
-        <a href="index.ru.html">Русский</a>
-        <a href="index.pol.html">Polski </a>
-        <a href="index.nl.html">Nederlands </a>
-        <a href="index.chs.html">中文 </a>
-        <a href="index.cht.html">繁體中文 </a>
-      </div>
-    </div>
-    <!-- /Full Page Image Header Area -->
-  
-    <!-- Intro -->
-    <div id="intro" class="intro">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <h2>What is <img src="img/frkLogoNew.png" title="Franko" style="width:50px;"> Franko?</h2>
-            <p class="lead">Franko is an amazing new virtual currency based on cryptography. Franko coins can be instantly sent anywhere in the world over the internet via a shared public ledger for little to no cost. One Franko is denominated as 1 FRK. New FRK are released into the economy every 30 seconds by the network as payment for confirming transactions and securing the network. Franko is designed to produce 11,235,813 FRK over the next 500 years making FRK the most long term solution. Each FRK is divisible to the 8th decimal place which helps overcome the limitations of scarcity.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /Intro -->
-  
-    <!-- Services -->
-    <div id="services" class="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4 text-center">
-            <h2>Features</h2>
-            <hr>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-2 col-md-offset-2 text-center">
-            <div class="service-item">
-              <i class="service-icon icon-rocket"></i>
-              <h4>Faster Transactions</h4>
-              <p>Transactions are processed into the public ledger by the Franko network approximately every 30 seconds. That means you get your money faster.</p>
-            </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <div class="service-item">
-              <i class="service-icon icon-magnet"></i>
-              <h4>100% Uptime</h4>
-              <p>The Franko software runs 24/7 on a distributed peer-to-peer network eliminating all central point of failure.</p>
-            </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <div class="service-item">
-              <i class="service-icon icon-shield"></i>
-              <h4>Military Grade Security</h4>
-              <p>Franko utilizes various cutting edge forms of military grade encryption to ensure your finances remain safe and secure.</p>
-            </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <div class="service-item">
-              <i class="service-icon icon-pencil"></i>
-              <h4>Opensource</h4>
-              <p>That's right, Franko is opensource software released under the MIT/X11 license which gives anyone the power to run, modify, and copy the software and to distribute, at your option, modified copies of the software.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /Services -->
+    <div class="background-image-overlay"></div>
 
-    <!-- Callout -->
-    <div class="callout">
-      <div class="vert-text">
-        <h1><img src="img/frkLogoNew.png" title="Franko" style="width:150px;"> Franko is the future because its fair, scarce, and blazing fast.</h1>
-      </div>
-    </div>
-    <!-- /Callout -->
+    <div id="outer-background-container" data-default-background-img="assets/images/other_images/bg5.jpg" style="background-image:url(assets/images/other_images/bg1.jpg);"></div>
+    <!-- end: #outer-background-container -->    
 
-    <!-- Portfolio -->
-    <div id ="merchants" class="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4 text-center">
-            <h2>Merchants</h2>
-            <hr>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <a href="https://www.cryptsy.com/users/register?refid=2108"><img class="img-portfolio img-responsive" src="img/cryptsy.png"></a>
-              <h4><a href="https://www.cryptsy.com/users/register?refid=2108" alt="buy and sell franko currency">CryptoCurrency Exchange</a></h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <a href="http://www.coingas.com" target="_blank"><img class="img-portfolio img-responsive" src="img/coingas.png"></a>
-              <h4><a href="http://www.coingas.com" alt="buy steam games for franko" target="_blank">Buy steam game codes</a></h4>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <a href="https://www.coins-e.com/exchange/FRK_BTC/" target="_blank"><img class="img-portfolio img-responsive" src="img/coinse.png"></a>
-              <h4><a href="https://www.coins-e.com/exchange/FRK_BTC/" target="_blank" alt="buy and sell franko currency">Trade CryptoCurrency</a></h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <a href="http://www.coinjabber.com" target="_blank"><img class="img-portfolio img-responsive" src="img/coinjabber.png"></a>
-              <h4><a href="http://www.coinjabber.com" alt="BITCOIN & CRYPTOCURRENCY REVIEWS" target="_blank">Bitcoin & Crypto Currency Reviews</a></h4>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <a href="http://jaysjerkyandgoodies.com/BEEF-JERKY-C323058.aspx?sid=34155" target="_blank"><img class="img-portfolio img-responsive" src="img/jaysjerky.png"></a>
-              <h4><a href="http://jaysjerkyandgoodies.com/BEEF-JERKY-C323058.aspx?sid=34155" target="_blank" alt="buy beef jerkey and silver boulion for franko currency">Buy jerkey and Silver Boulion</a></h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <a href="http://www.copiamarket.com/franko-loto/" target="_blank"><img class="img-portfolio img-responsive" src="img/frankoloto.png"></a>
-              <h4><a href="http://www.copiamarket.com/franko-loto/" alt="official franko loto" target="_blank">Play the Franko loto</a></h4>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <a href="http://www.briefcaseit.com" target="_blank"><img class="img-portfolio img-responsive" src="img/bci.png"></a>
-              <h4><a href="http://www.briefcaseit.com" alt="webdesign, hosting, IT services" target="_blank">Webdesign, Hosting</a></h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <a href="http://www.copiamarket.com" target="_blank"><img class="img-portfolio img-responsive" src="img/copia.png"></a>
-              <h4><a href="http://www.copiamarket.com" target="_blank">Free marketplace</a></h4>
-            </div>
-          </div>
-        </div>
-         <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <a href="" target="_blank"><img class="img-portfolio img-responsive" src="img/cryptocoinexplorer.png"></a>
-              <h4><a href="http://frk.cryptocoinexplorer.com/" target="_blank" alt="explore the franko blockchain">Explore the Blockchain</a></h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <a href="http://www.myfirstfranko.com/GettingStarted/" target="_blank"><img class="img-portfolio img-responsive" src="img/myfirstfranko.png"></a>
-              <h4><a href="http://www.myfirstfranko.com/GettingStarted/" alt="official franko faucet" target="_blank">Get your first FRK</a></h4>
-            </div>
-          </div>
-        </div>
+    <!-- Outer Container -->
+    <div id="outer-container">
+
+      <!-- Left Sidebar -->
+      <section id="left-sidebar">
         
-        <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <a href="http://www.crypto-knight.org" target="_blank"><img class="img-portfolio img-responsive" src="img/cryptoknight.png"></a>
-              <h4><a href="http://www.crypto-knight.org" target="_blank" alt="Private investigators">Buy FRK With Cash</a></h4>
-            </div>
-          </div>
-          
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <a href="http://www.dencoinpools.com/" target="_blank"><img class="img-portfolio img-responsive" src="img/dencoinpools.png"></a>
-              <h4><a href="http://www.dencoinpools.com" alt="Collective Pools" target="_blank">Collective Pools</a></h4>
-            </div>
-          </div>
-          </div>
-          
-          <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <a href="http://www.workforcrypto.com" target="_blank"><img class="img-portfolio img-responsive" src="img/workforcrypto.png"></a>
-              <h4><a href="http://www.workforcrypto.com" target="_blank" alt="Work for Crypto">Work for Crypto</a></h4>
-            </div>
-          </div>
-          
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <a href="http://www.cryptobullionpools.com/" target="_blank"><img class="img-portfolio img-responsive" src="img/FrankoFolders.png"></a>
-              <h4><a href="http://www.cryptobullionpools.com" alt="Help Standford Scientist find the cure for cancer" target="_blank">Help Cure Cancer and Earn FRK</a></h4>
-            </div>
-          </div>
-     	</div>
-     <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <a href="http://bitcoinprbuzz.com/services/?Franko" target="_blank"><img class="img-portfolio img-responsive" src="img/bitcoinbuzzpr.png"></a>
-              <h4><a href="http://bitcoinprbuzz.com/services/?Franko" target="_blank" alt="PR For FRK">Press Release Services</a></h4>
-            </div>
-          </div>
-          
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <a href="http://frankopedia.com/" target="_blank"><img class="img-portfolio img-responsive" src="img/Frankopedia.png"></a>
-              <h4><a href="http://frankopedia.com" alt="Franko Service Directory" target="_blank">The entire Merchant list.</a></h4>
-            </div>
-          </div> 
-        </div>
-        <!-- End of merchants -->
-      </div>
-    </div>
-    <!-- /Portfolio -->
+        <div class="logo">
+          <a href="#intro" class="link-scroll"><img src="assets/images/other_images/logo.png" alt="Franko"></a>
+        </div><!-- .logo -->
 
-    <!-- Call to Action -->
-    <div class="call-to-action" id="downloads">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <h3>Download Franko today and take control of tomorrow.</h3>
-            <a href="downloads/Franko-0.8.5.3-Linux.zip" class="btn btn-lg btn-default">Linux</a>
-            <a href="downloads/Franko-0.8.5.3-Win32.zip" class="btn btn-lg btn-primary">Windows</a>
+        <!-- Menu Icon for smaller viewports -->
+        <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
+
+        <ul id="main-menu">
+		<li class="menu-item scroll"><a class="e-widget" href="https://gleam.io/c8lcs/franko-giveaway" rel="nofollow">Enter to Win 100 FRK</a></li>
+          <li id="menu-item-text" class="menu-item scroll"><a href="#text">Franko is..</a></li>
+          <li id="menu-item-carousel" class="menu-item scroll"><a href="#carousel">Downloads</a></li>
+          <li id="menu-item-grid" class="menu-item scroll"><a href="#grid">Docs</a></li>
+          <li id="menu-item-featured" class="menu-item scroll"><a href="#featured">Get/Trade/Use</a></li>
+          <li id="menu-item-contact" class="menu-item scroll"><a href="#contact">Mailing List</a></li>
+		  <li id="menu-item-bounties" class="menu-item scroll"><a href="https://docs.google.com/document/d/1JXVDKeIP340GH8ZJFOCWrJubG9sEgv598C3uLYTPnCE/">Bounties</a></li>
+		  <li id="menu-item-media" class="menu-item"><a href="http://www.youtube.com/frankocurrency">Media</a></li>
+		  <li id="menu-item-forum" class="menu-item"><a href="http://forum.frankos.org">Forum</a></li>
+          <li id="menu-item-blockexplorer" class="menu-item"><a href="http://explorer.frankos.org:3000">Block Explorer</a></li>
+          <li id="menu-item-blockexplorer" class="menu-item"><a href="http://coinplorer.com/FRK">Block Explorer 2</a></li>
+          <li id="menu-item-frank-price" class="menu-item"><a href="https://www.cryptsy.com/users/register?refid=2108"><strong>₣1 = $<?=$price;?></strong></a></li>
+  		  <li id="menu-item-forum" class="menu-item"><a href="https://www.coinbase.com/join/frk">$5 Free BTC</a></li>
+          <li id="menu-item-franko-price" class="menu-item"><a href="http://www.frankos.org/collective/" class="link-scroll"><img src="/img/CollectiveEmblemWhite.png" width="100" alt="collective"></a></li>
+		  <li id="menu-item-dcc" class="menu-item"><a href="https://credly.com/credit/cac7bc32e" class="link-scroll"><img src="/img/dcc-badge.png" width="100" alt="collective"></a></li>
+        </ul><!-- #main-menu -->
+
+      </section><!-- #left-sidebar -->
+      <!-- end: Left Sidebar -->
+
+      <section id="main-content" class="clearfix">
+        
+        <article id="intro" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg1.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+                <section class="feature-text">
+                    <center>
+                        <img src="/img/CollectiveEmblemWhite.png" alt="the collective">
+                        <h1>Franko</h1>
+                    </center>
+                  <p>Some say Franko is a cryptocurrency, others say Franko is the future.<br>Non nobis solum, sed omnibus!</p>
+                  <p><a href="#text" class="link-scroll btn btn-outline-inverse btn-lg">find out more</a></p>
+                </section>
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+
+        <article id="text" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg6.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+                <h1 class="section-title">Franko is..</h1>
+
+                <p class="feature-paragraph"><img data-img-src="assets/images/theme_images/users.png" class="lazy pull-right" alt="The future of ownership"></p>
+                <h4>An innovative approach to ownership.</h4>
+                <p>Franko is a peer-to-peer payment network built with <a href="" onclick="populate_and_open_modal(event, 'modal-content-1');">blockchain</a> technology. The blockchain is a synchronised public ledger that monitors ownership of FRK's (frankos). FRK (franko) is the <a href="https://en.wikipedia.org/wiki/Financial_instrument">financial instrument</a> used on the Franko payment network. FRK's can be instantly sent to anyone in the world as simply as sending an email and at little to no cost. New FRK's are generated at a predictable rate of 0.25FRK/30 seconds (720 FRK per day) as an incentive to volunteers who secure the network against <a href="https://en.bitcoin.it/wiki/Double-spending">double spending</a>. You can buy and sell FRK at cryptocurrency exchanges like <a href="https://www.cryptsy.com/users/register?refid=2108">Cryptsy</a>, exchange FRK for goods and services at accepting retailers or invest in FRK as a store of wealth like gold and silver.</p>
+                <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-1');" class="btn btn-outline-inverse btn-sm">read more</a></p>
+                
+                <div class="content-to-populate-in-modal" id="modal-content-1">
+                  <h1>Blockchain</h1>
+                  <p><img data-img-src="assets/images/other_images/transp-image4.png" class="lazy rounded_border hover_effect pull-right" alt="blockchain definition">The Franko blockchain is a synchronized public ledger that is stored on a global network of computers.  Blockchains are systems of accounting--that is, of keeping track of things and in this case FRK's.  They represent a new and superior way of recording and memorializing transactions or of registering data publicly.  There are three primary factors that distinguish the blockchain ledger from an "ordinary" accounting ledger or registration tool:</p>
+				  <p>
+					<ul>
+						<li>The Franko ledger, the blockchain, is "open", meaning that any person in the world with the necessary credentials (that is, who controls shares) is free to make entries in the ledger.</li>
+						<li>The Franko blockchain ledger is "distributed" and maintained by the public, rather than centralized and maintained by a "trusted third party" (such as a bank or registrar), meaning that anyone who may wish to do so can store a copy of the ledger on their computer or, theoretically, even print it out and read it.</li>
+						<li>The Franko blockchain ledger is secure, meaning that, subject to exceptions that are irrelevant for purposes of this comment, all transactions entered into the ledger are effectively permanent, incorruptible, and irreversible. </li>
+					</ul>
+				  </p>
+                  <p>Thus, blockchain technologies represent the world's first, and perhaps only, solution to the Byzantine Generals Problem ("BGP").  Because this age-old problem of computer science has now been solved, it is possible for the first time in human history to maintain a ledger or register that is both open to the general public and provably secure.</p>
+				  <p>Individual FRK's or fractions thereof are both the technological means by which this distributed ledger is secured and the unit of account used to track entries on the ledger.  To make an entry into the ledger, one must possess, or rather control via a private cryptographic key, at least the smallest available fraction of a share, and very importantly, one must transfer said share (or fraction thereof) to another account as part of making the entry in the ledger or register.  Said another way, every single entry in the corporate ledger requires the transfer of share from one account (called an  "address") on the ledger to another address on the ledger. </p>
+				  <p>This requirement that every entry in the Franko blockchain ledger involve the transfer of shares from one address to another is an integral part of the solution to the Byzantine Generals Problem.  Without this requirement, the ledger would be insecure and would quickly fill with spam.  Furthermore, for a variety reasons, it would no longer be possible to keep all distributed copies of the ledger in sync or to incentivize unrelated parties for administering and maintaining the ledger on their computers.</p>
+                  <h3>Proof of Task</h3>
+                  <p><img data-img-src="assets/images/other_images/transp-image3.png" class="lazy rounded_border hover_effect pull-left" alt="proof of task">A Proof of task is a quantified unit of certainty that an important task or job or work has been successfully completed on behalf of the Franko payment network. Proofs of task can solve a multitude of problems ranging from the Byzantine Generals Problem, paying stake to shareholders, and securing the Franko payment network network against internet outages. Some more exotic forms of work include but are not limited to finding large prime numbers, making data fault tolerant, distributing name servers and creating safe contracts. Proofs of task (hereafter proofs with a lowercase "p") are the way the Franko payment network distributes FRK's. </p>
+                  <p>The key difference between a proof of task vs. a service is, a proof of task creates new FRK's and a service uses shares already in circulation as a means of payment. For example, the federal reserve is a centralized entity that creates and issues new shares of the us dollar, while McDonald's is a service who pays its employees with dollars for serving hamburgers.  A service will require a stockpile of already issued shares in order to function while a proof system increases the total supply of shares in circulation. Proofs give users the ability to create services. Services increase the value of the shares the proof systems create. The corporation should continue to grow by increasing the number of ways one can earn FRK's by performing valuable tasks. As the corporation adds more proof systems it becomes less dependent on a single task for survival. </p>
+                </div><!-- #modal-content-1 -->
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+
+        <article id="carousel" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg2.jpg">
+          <div class="content-wrapper clearfix">
+
+              <div id="features-carousel" class="carousel slide with-title-indicators max-height" data-height-percent="70" data-ride="carousel">
+                
+                <!-- Indicators - slide navigation -->
+                <ol class="carousel-indicators title-indicators">
+                  <li data-target="#features-carousel" data-slide-to="0" class="active">Windows</li>
+                  <li data-target="#features-carousel" data-slide-to="1">Mac</li>
+                  <li data-target="#features-carousel" data-slide-to="2">Android</li>
+                  <li data-target="#features-carousel" data-slide-to="3">Source</li>
+                  <li data-target="#features-carousel" data-slide-to="4">Config file</li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+
+                  <div class="item active">
+                    <div class="carousel-text-content">
+                      <img src="assets/images/theme_images/windows.png" class="icon" alt="windows">
+                      <h2 class="title">Windows</h2><p><a href="https://mega.co.nz/#!rFVHFRKJ!2nWzSuX0F7BvfenCEh0VuBmzntIY7eOieIVskfVscvQ" class="btn btn-outline-inverse btn-sm">Mega Download</a></p>
+					  <p><a href="https://drive.google.com/file/d/0B-W443vRXlxGM2hPSzVUR1g3WTQ/view?usp=sharing" class="btn btn-outline-inverse btn-sm">Google Play Download</a></p>
+                      <p><a href="https://www.dropbox.com/s/duhesk6rb2bdo3y/franko-qt-v1.0.0.zip" class="btn btn-outline-inverse btn-sm">Dropbox Download</a></p>
+
+                    </div>
+                  </div><!-- .item -->
+
+                  <div class="item">
+                    <div class="carousel-text-content">
+                      <img src="assets/images/theme_images/apple.png" class="icon" alt="franko apple">
+                      <h2 class="title">Mac</h2>
+                      <p><a href="https://www.dropbox.com/s/pi8c3373quojef4/Franko-MAC-Qt.zip" class="btn btn-outline-inverse btn-sm">Download</a></p>
+                    </div>
+                  </div><!-- .item -->
+
+                  <div class="item">
+                    <div class="carousel-text-content">
+                      <img src="assets/images/theme_images/android.png" class="icon" alt="franko android">
+                      <h2 class="title">Android</h2>
+                      <p><a href="https://play.google.com/store/apps/details?id=hashengineering.franko.wallet" class="btn btn-outline-inverse btn-sm">Download</a></p>
+                    </div>
+                  </div><!-- .item -->
+
+                  <div class="item">
+                    <div class="carousel-text-content">
+                      <img src="assets/images/theme_images/github.png" class="icon" alt="github franko">
+                      <h2 class="title">Source</h2>
+                      <p><a href="http://www.github.com/franko-org/franko" class="btn btn-outline-inverse btn-sm">View Source</a></p>
+                    </div>
+                  </div><!-- .item -->
+                  
+                  <div class="item">
+                    <div class="carousel-text-content">
+                      <img src="assets/images/theme_images/github.png" class="icon" alt="franko.conf">
+                      <h2 class="title">Franko.conf</h2>
+					  <p><a href="http://www.frankos.org/downloads/franko.conf" class="btn btn-outline-inverse btn-sm">Download</a></p>
+                      <p><a href="https://www.dropbox.com/s/creo4zodzrqxv5x/franko.conf" class="btn btn-outline-inverse btn-sm">Dropbox Download</a></p>
+                    </div>
+                  </div><!-- .item -->
+
+                </div><!-- .carousel-inner -->
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#features-carousel" data-slide="prev"></a>
+                <a class="right carousel-control" href="#features-carousel" data-slide="next"></a>
+
+              </div><!-- #about-carousel -->
+
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+
+        <article id="grid" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg3.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-11 col-md-10 pull-right">
+
+                <h1 class="section-title">Docs</h1>
+                
+                <!-- grid -->
+                <section class="grid row clearfix clearfix-for-2cols">
+
+                  <!-- grid item -->
+                  <div class="grid-item col-md-6">
+                    <div class="item-content clearfix">
+                      <span class="icon glyphicon glyphicon-floppy-disk"></span>
+                      <div class="text-content">
+                        <h5>Presskit</h5>
+                        <p>This archive contains logos and other important information for the press.</p>
+                      </div>
+                    </div><!-- end: .item-content -->
+                  </div><!-- end: .grid-item -->
+
+                  <!-- grid item -->
+                  <div class="grid-item col-md-6">
+                    <div class="item-content clearfix">
+                      <span class="icon glyphicon glyphicon-list-alt"></span>
+                      <div class="text-content">
+                        <h5>News</h5>
+                        <p>All the latest updates about Franko.</p>
+                      </div>
+                    </div><!-- end: .item-content -->
+                  </div><!-- end: .grid-item -->
+
+                  <!-- grid item -->
+                  <div class="grid-item col-md-6">
+                    <div class="item-content clearfix">
+                      <span class="icon glyphicon glyphicon-book"></span>
+                      <div class="text-content">
+                        <h5>Articles</h5>
+                        <p>Articles written by the press and others about Franko.</p>
+                      </div>
+                    </div><!-- end: .item-content -->
+                  </div><!-- end: .grid-item -->
+
+                  <!-- grid item -->
+                  <div class="grid-item col-md-6">
+                    <div class="item-content clearfix">
+                      <span class="icon glyphicon glyphicon-file"></span>
+                      <div class="text-content">
+                        <h5><a href="https://docs.google.com/document/d/1FpgtSvYOewGZMNIdQZUL1mK8GAGj6k3jIrxfzZvUpCc/edit#heading=h.q4mvioqm97ox">Whitepaper</a></h5>
+                        <p>A white paper written by Christopher Franko the lead developer of Franko.</p>
+                      </div>
+                    </div><!-- end: .item-content -->
+                  </div><!-- end: .grid-item -->
+
+                </section><!-- end: grid -->
+
+            </div><!-- .col-sm-11 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+
+        <article id="featured" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg4.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-11 pull-right">
+				
+                <h1 class="section-title">Get/Trade/Use</h1>
+              
+                <!-- feature columns -->
+                <section class="feature-columns row clearfix">
+
+                  <!-- feature 1 -->
+                  <article class="feature-col col-md-4">
+                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-6');" class="thumbnail linked">
+                      <div class="image-container">
+                        <img data-img-src="assets/images/theme_images/money.png" class="lazy item-thumbnail" alt="exchanges">
+                      </div>
+                      <div class="caption">
+                        <h5>Exchanges</h5>
+                        <p>Click to see a list of all the exchanges trading FRK</p>
+                      </div><!-- .caption -->
+                    </a><!-- .thumbnail -->
+
+                    <div class="content-to-populate-in-modal" id="modal-content-6">
+					<img data-img-src="assets/images/theme_images/exchanges.png" class="lazy full-width" alt="cryptocurrecy exchanges">
+                      <h1>Exchanges</h1>
+                      <p>You can buy sell trade FRK at any of these official exchanges<br/></p>
+
+                      <!-- image slider inside popup -->
+                      <div id="unique-id-for-image-slider" class="owl-carousel popup-image-gallery">
+                        <!-- slide -->
+                        <div>
+                          <!-- caption is optional. To remove it, remove the <h6> below -->
+                          <h6 class="caption">Cryptsy</h6>
+						  <a href="https://www.cryptsy.com/users/register?refid=2108">
+							<img class="lazyOwl" data-src="assets/images/theme_images/cryptsy.png">
+						  </a>
+                        </div>
+                        <!-- slide -->
+                        <div>
+                          <h6 class="caption">Coins-E</h6>
+						  <a href="https://www.coins-e.com/">
+                          <img class="lazyOwl" data-src="assets/images/theme_images/coinse.png">
+						  </a>
+                        </div>
+                       
+                    </div><!-- #modal-content-6 -->
+                  </article>
+
+                  <!-- feature 2 -->
+                  <article class="feature-col col-md-4">
+                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-7');" class="thumbnail linked">
+                      <div class="image-container">
+                        <img data-img-src="assets/images/theme_images/cubes.png" class="lazy item-thumbnail" alt="Lorem Ipsum">
+                      </div>
+                      <div class="caption">
+                        <h5>Employment / Mining</h5>
+                        <p>Work for Franko and earn shares!</p>
+                      </div><!-- .caption -->
+                    </a><!-- .thumbnail -->
+
+                    <div class="content-to-populate-in-modal" id="modal-content-7">
+					<img data-img-src="assets/images/theme_images/miners.png" class="lazy full-width" alt="shopping with franko">
+                       <h1>Employment / Mining</h1>
+                      <p>Earn FRK by working for Franko<br/></p>
+
+                      <!-- image slider inside popup -->
+                      <div id="unique-id-for-image-slider" class="owl-carousel popup-image-gallery">
+                        <!-- slide -->
+                        <div>
+                          <!-- caption is optional. To remove it, remove the <h6> below -->
+                          <h6>Mining</h6>
+						  <p>Mining is the process of spending computing power to process transactions, secure the network, and keep everyone in the system synchronized together. This process is referred to as "mining" as an analogy to gold mining because it is also a temporary mechanism used to issue new shares of Franko. Unlike gold mining, however, Franko mining provides a reward in exchange for useful services required to operate the corporation. Mining will still be required after the last share of franko is issued.</p>
+                        </div>
+                        <!-- slide -->
+                        <div>
+                          <h6>Employment Services</h6>
+						  <p>Give a list of places to work for people who already have FRK</p>
+                        </div>
+                    </div><!-- #modal-content-7 -->
+                  </article>
+
+                  <!-- feature 3 -->
+                  <article class="feature-col col-md-4">
+                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-8');" class="thumbnail linked">
+                      <div class="image-container">
+                        <img data-img-src="assets/images/theme_images/store.png" class="lazy item-thumbnail" alt="stores">
+                      </div>
+                      <div class="caption">
+                        <h5>Merchants / Services</h5>
+                        <p>Buy goods and services with FRK.</p>
+                      </div><!-- .caption -->
+                    </a><!-- .thumbnail -->
+
+                    <div class="content-to-populate-in-modal" id="modal-content-8">
+                      <img data-img-src="assets/images/theme_images/shopping.png" class="lazy full-width" alt="shopping with franko">
+                      <h1>Merchants / Services</h1>
+                      <p>User your FRK to buy and sell goods and services.</p>
+                    </div><!-- #modal-content-8 -->
+
+                  </article>
+
+                </section><!-- end: .feature-columns -->
+
+              <!-- End: Section content to edit -->
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+
+        <article id="contact" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg5.jpg">
+          <div class="content-wrapper clearfix">
             
-            <a href="https://play.google.com/store/apps/details?id=hashengineering.franko.wallet" class="btn btn-lg btc-default">Android</a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <h3>Mirrors.</h3>
-            <a href="http://ec2-54-236-122-39.compute-1.amazonaws.com/Franko-0.8.5.3-Linux.zip" class="btn btn-lg btn-default">Linux</a>
-            <a href="http://ec2-54-236-122-39.compute-1.amazonaws.com/Franko-0.8.5.3-Win32.zip" class="btn btn-lg btn-primary">Windows</a>
-            <a href="https://www.dropbox.com/s/xq8xk2swbuun27a/Franko-Qt-MacOSX-0.8.5.3-instacash.zip" class="btn btn-lg btn-danger">Mac</a>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /Call to Action -->
-    
- <!-- About -->
-    <div id="about" class="intro">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-            
-<h2>About frankos.org</h2>
-<hr>
-<p>Frankos.org is dedicated to help Franko to develop in a sustainable way.</p>
-<h2>Who owns frankos.org?</h2>
-<p>Frankos.org is the original domain name used with the first Franko website. It was registered and is still managed by the Franko High Council and by additional community members, with the input of <a href="http://forum.frankos.org/">Franko communities</a>. Just like nobody owns the email technology, nobody owns the Franko network. As such, nobody can speak with authority in the name of Franko.</p>
-<h2>Then... who controls Franko?</h2>
-<p>Franko is controlled by all Franko users around the world. Developers are improving the software but they can't force a change in the rules of the Franko protocol because all users are free to choose what software they use. In order to stay compatible with each other, all users need to use software complying with the same rules. Franko can only work decently with a complete consensus between all users. Therefore, all users and developers have strong incentives to adopt and protect this consensus.</p>
-<h2>Mission</h2>
-<ul>
-  <li>Inform users to protect them from common mistakes.</li>
-  <li>Give an accurate description of Franko properties, potential uses and limitations.</li>
-  <li>Display transparent alerts and events regarding the Franko network.</li>
-  <li>Invite talented humans to help with Franko development at many levels.</li>
-  <li>Provide visibility to the large scale Franko ecosystem.</li>
-  <li>Improve Franko worldwide accessibility with internationalization.</li>
-  <li>Remain a neutral informative resource about Franko.</li>
-</ul>
-<h2>Help us</h2>
-<p>You can report any problem or help to improve frankos.org on <a href="https://github.com/franko-org/franko">GitHub</a> by opening an issue or a pull request in English. When submitting a pull request, please take required time to discuss your changes and adapt your work. You can help with translations by joining a team on <a href="http://forum.frankos.org">Translation Forum</a>. Please don't ask for promotion for your personal business or website, except for special cases like conferences.</p>
+              <h1 class="section-title">Mailing List</h1>
+              <!-- Begin MailChimp Signup Form -->
 
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /About -->
-    
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <ul class="list-inline">
-              <li><a href="https://www.facebook.com/Frankosorg"><i class="icon-facebook icon-2x"></i></a></li>
-              <li><a href="http://www.twitter.com/frankocurrency"><i class="icon-twitter icon-2x"></i></a></li>
-              <!-- <li><i class="icon-dribbble icon-2x"></i></li> -->
-            </ul>
-            <hr>
-            <p>Copyright &copy; Franko Collective 2013</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- /Footer -->
+<div id="mc_embed_signup">
+<form action="//myfirstfranko.us4.list-manage.com/subscribe/post?u=7bf9de3f37ddc7556277aa336&amp;id=0a3a89c1ec" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	<h6>Subscribe to our mailing list and receive important updates and news regarding Franko</h6>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_7bf9de3f37ddc7556277aa336_0a3a89c1ec" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form>
+</div>
 
-  <!-- Bootstrap core JavaScript -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.js"></script>
+<!--End mc_embed_signup-->
 
-  <!-- Custom JavaScript for the Side Menu - Put in a custom JS file if you want to clean this up -->
-  <script>
-      $("#menu-close").click(function(e) {
-          e.preventDefault();
-          $("#sidebar-wrapper").toggleClass("active");
-      });
-  </script>
-  <script>
-      $("#menu-toggle").click(function(e) {
-          e.preventDefault();
-          $("#sidebar-wrapper").toggleClass("active");
-      });
-  </script>
-  <script>
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-              || location.hostname == this.hostname) {
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
 
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-            }
-          }
-        });
-      });
-    </script>
+      </section><!-- #main-content -->
+
+      <!-- Footer -->
+      <section id="footer">
+
+        <!-- Go to Top -->
+        <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com/Frankosorg" target="_blank" title="Facebook"><img src="assets/images/theme_images/social_icons/facebook.png" alt="Facebook"></a></li>
+          <li><a href="http://www.twitter.com/frankocurrency" target="_blank" title="Twitter"><img src="assets/images/theme_images/social_icons/twitter.png" alt="Twitter"></a></li>
+          <li><a href="https://plus.google.com/b/111268799600680131742/111268799600680131742/posts" target="_blank" title="Google+"><img src="assets/images/theme_images/social_icons/googleplus.png" alt="Google+"></a></li>
+        </ul>
+
+        <!-- copyright text -->
+        <div class="footer-text-line">&copy; 2013-Present Franko | Distributed Autonomous Corporation</div>
+      </section>
+      <!-- end: Footer -->      
+
+    </div><!-- #outer-container -->
+    <!-- end: Outer Container -->
+
+    <!-- Modal -->
+    <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+    <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-body">
+          </div><!-- .modal-body -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal -->    
+
+    <!-- Javascripts
+    ================================================== -->
+
+    <!-- Jquery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Easing - for transitions and effects -->
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+
+    <!-- background image strech script -->
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <!-- background image fix for IE 9 or less
+       - use same background as set above to <body> -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      jQuery("#outer-background-container").backstretch("assets/images/other_images/bg5.jpg");
+    });
+    </script> 
+    <![endif]-->  
+
+    <!-- detect mobile browsers -->
+    <script src="assets/js/detectmobilebrowser.js"></script>
+
+    <!-- owl carousel js -->
+    <script src="assets/js/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- Custom functions for this theme -->
+    <script src="assets/js/functions.min.js"></script>
+    <script src="assets/js/initialise-functions.js"></script>
+
+    <!-- IE9 form fields placeholder fix -->
+    <!--[if lt IE 9]>
+    <script>contact_form_IE9_placeholder_fix();</script>
+    <![endif]--> 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-45824330-1', 'frankos.org');
+  ga('create', 'UA-45824330-1', 'auto');
   ga('send', 'pageview');
 
 </script>
   </body>
-
 </html>
